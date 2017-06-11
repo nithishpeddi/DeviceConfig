@@ -1,0 +1,31 @@
+<nav class="nav">
+  <div class="nav-left">
+    <a class="nav-item">
+      <h2> <a routerLink="/"> Configuration Manager</a></h2>
+    </a>
+  </div>
+  <div class="nav-right nav-menu">
+    <a class="nav-item">
+      <a class="button is-info is-inverted is-outlined"><i class="fa fa-bell" aria-hidden="true"></i>Notification</a>
+    </a>
+    <a class="nav-item">
+      <a class="button is-info is-inverted is-outlined" routerLink="/Device"><i class="fa fa-user" aria-hidden="true" ></i>Build PM</a>
+    </a>
+  </div>
+</nav>
+<!--<div class="content ">
+  <div class="mainContent">
+    <div class="addNewProject">
+
+      <a class="plus" routerLink="/Device" (click)="setSaving($event.target, 'Creating')">Click on + to add new project</a>
+    </div>
+
+  </div>
+</div>-->
+ <div class="card-content">
+    <p class="title">
+       <a class="plus" routerLink="/Device"(click)="setSaving($event.target, 'Creating')"><i class="fa fa-plus-square fa-2x" aria-hidden="true"></i></a>
+    </p>
+  </div>
+
+<router-outlet></router-outlet>
