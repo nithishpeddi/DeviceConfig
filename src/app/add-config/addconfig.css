@@ -1,0 +1,35 @@
+.nav {
+    background: #663399;
+}
+
+.nav-item {
+    color: white;
+}
+
+.box {
+    margin: 10px;
+    height: 680px;
+}
+
+h6 {
+    color: red;
+}
+
+.control {
+    width: 16em;
+}
+
+.row {
+    margin: 2em;
+}
+
+.textrow {
+    margin-top: 3%;
+    text-align: center;
+    text-shadow: 40mm;
+}
+
+.button {
+    align-content: center;
+}
+
