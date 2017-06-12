@@ -1,0 +1,182 @@
+<form (ngSubmit)="onSubmit(f)" #f="ngForm">
+    <div class="columns">
+        <div class="column is-narrow-desktop">
+            <div class="box" style="width: 250px">
+
+                <p class="control">
+                    <label class="label">Project Name</label>
+
+                    <input class="input" name="projectName" type="text" [(ngModel)]="Project.name" placeholder="Project">
+                </p><br>
+
+                <p class="control"> <label class="label">Phase Name</label>
+
+                    <input class="input" type="text" name="projectPhase" [(ngModel)]="Project.phase" placeholder="Phase">
+                </p><br>
+
+                <p class="control"> <label class="label">Milestone Name</label>
+                    <input class="input" type="text" name="praojectMileStone" [(ngModel)]="Project.milestone" placeholder="Milestone"></p>
+                <br>
+
+                <p class="control"> <label class="label">Device Name</label>
+                    <input class="input" type="text" name="deviceName" [(ngModel)]="Project.deviceName" placeholder="Device">
+                </p>
+            </div>
+        </div>
+
+
+        <div class="column is-three-quarters">
+            <div class="box" style="height:680px">
+                <p class="title is-5">Add a configuration</p>
+
+                <div class="field is-horizontal">
+
+                    <div class="field-body">
+                        <div class="field is-grouped">
+                            <p class="control is-expanded has-icons-left">
+                                <input class="input" name="configurationID" type="text" placeholder="﴾ID of configuration﴿" ngModel>
+                            </p>
+                        </div>
+                        <div class="field">
+                            <p class="control is-expanded has-icons-left has-icons-right">
+                                <input class="input" name="configurationName" type="text" placeholder="﴾Name of configuration﴿" ngModel>
+                            </p>
+                        </div>
+                        <div class="field">
+
+                            <p class="control is-expanded has-icons-left">
+                                <input class="input" name="conponents" type="text" placeholder="﴾Components, comma‐separated﴿" ngModel>
+
+                            </p>
+                        </div>
+
+                        <br>
+                    </div>
+                </div>
+
+                <div class="field-body">
+                    <div class="field is-grouped">
+                        <p class="control is-expanded has-icons-left">
+                            <input class="input" name="units" type="number" placeholder="Units" ngModel>
+                        </p>
+                    </div>
+                    <div class="field">
+                        <p class="control is-expanded has-icons-left has-icons-right">
+                            <input class="input" name="subSystems" type="text" placeholder="﴾Subsystem﴿" ngModel>
+                        </p>
+                    </div>
+                    <div class="field">
+
+                        <p class="control is-expanded has-icons-left">
+                            <input class="input" name="assignedTo" type="text" placeholder="Assigned To  " ngModel>
+
+                        </p>
+                    </div>
+                    <div class="field">
+
+                        <p class="control is-expanded has-icons-left">
+                            <input class="input" name="testTeam" type="text" placeholder="Test Team" ngModel>
+
+                        </p>
+                    </div>
+                    <br>
+
+                </div>
+                <br>
+                <div class="field-body">
+                    <div class="field is-grouped">
+                        <p class="control is-expanded has-icons-left">
+                        </p>
+                    </div>
+                    <div class="field">
+
+                        <p class="control is-expanded has-icons-left">
+                            <input class="input" name="priority" type="number"  placeholder="Priority" ngModel>
+
+                        </p>
+                    </div>
+                    <div class="field">
+                        <p class="control is-expanded has-icons-left has-icons-right">
+                            <my-date-picker name="date1" [options]="myDatePickerOptions" type="number"value="targetdate"  [(ngModel)]="model" required></my-date-picker>
+                        </p>
+                    </div>
+                    <div class="field">
+
+                        <p class="control is-expanded has-icons-left">
+                            <my-date-picker name="date2" [options]="myDatePickerOptions" value="shippeddatedate" [(ngModel)]="modelship" required></my-date-picker>
+
+                        </p>
+                    </div>
+
+                    <br>
+
+                </div>
+                <div class="field-body">
+                    <div class="field is-grouped">
+                        <p class="control is-expanded has-icons-left">
+                            <span class="select">
+      <select>
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+        <option>6</option>
+        <option>7</option>
+        <option>8</option>
+        <option>9</option>
+        <option>10</option>
+      </select>
+    </span>
+                        </p>
+
+                        <p class="control">
+                            <input class="input" name="unitShipped" type="number" placeholder="Units Shipped" ngModel>
+                        </p>
+                    </div>
+
+
+
+                    <!--<div class="field-body">
+                    <div class="field is-grouped">
+                        <p class="control is-expanded has-icons-left">
+                            <input class="input" name="unitShipped" type="number" placeholder="Units Shipped" ngModel>
+                        </p>
+                    </div>-->
+                    <div class="field">
+
+                        <p class="control is-expanded has-icons-left">
+                            <input class="input" name="provisioned" type="text" placeholder="Provisioned" ngModel>
+
+
+                        </p>
+                    </div>
+                    <div class="field">
+
+                        <p class="control is-expanded has-icons-left">
+                            <input class="input" name="smokeTest" type="text" placeholder="Smoke Test" ngModel>
+
+                        </p>
+                    </div>
+
+                    <br>
+
+                </div>
+                <textarea name="text" class="textrow" rows="9" cols="130" ngModel>
+
+</textarea>
+                <br>
+                <br>
+                <div class="field is-grouped">
+                    <p class="control">
+                        <button class="button is-primary" type="submit">Save</button>
+
+                        <button class="button is-danger"><i class="fa fa-times" aria-hidden="true"></i>Cancel</button>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+
+<router-outlet></router-outlet>
