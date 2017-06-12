@@ -5,25 +5,24 @@ import { HttpModule } from '@angular/http';
 import { RouterModule } from "@angular/router";
 import { AppComponent } from './app.component';
 import { AppRoutes } from "./app.routing";
-import { NavigationComponent } from './navigation/navigation.component';
 import { HomeComponent } from "./Dashboard/dashboard";
 import { AddProjectComponent } from './add-project/add-project.component';
 import { MyDatePickerModule } from 'mydatepicker';
 import { SendDataService } from './Services/send-data.service';
 import { ViewProjectComponent } from './view-project/view-project.component';
-
+import { AccesseriesModule } from './add-accesseries/accesseries.module';
 
 
 @NgModule({
   declarations: [
-    AppComponent,NavigationComponent,HomeComponent,AddProjectComponent,ViewProjectComponent
+    AppComponent, HomeComponent, AddProjectComponent, ViewProjectComponent
   ],
   imports: [
 
     BrowserModule,
     FormsModule,
     HttpModule,
-    MyDatePickerModule,
+    MyDatePickerModule, AccesseriesModule,
     RouterModule.forRoot(AppRoutes),
   ],
   providers: [SendDataService],

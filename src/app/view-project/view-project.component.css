@@ -16,3 +16,10 @@ notification{
     text-align: center;
     border: 3px solid green;
 }
+block{
+    text-align: right;
+    
+}
+button{
+    margin-left: 5em;
+}
