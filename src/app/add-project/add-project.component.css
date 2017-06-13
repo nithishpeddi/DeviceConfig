@@ -7,8 +7,9 @@
 }
 
 .box {
-    margin: 10px;
+    margin: 15px;
     height: 680px;
+    width: 74em
 }
 
 h6 {
@@ -27,12 +28,10 @@ h6 {
     margin-top: 3%;
     text-align: center;
     text-shadow: 40mm;
+        overflow: scroll;
 }
 
 .button {
     align-content: center;
 }
 
-mainContent {
-    font-size:
-}

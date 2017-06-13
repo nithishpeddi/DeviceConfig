@@ -1,11 +1,17 @@
-.nav {
-    background: #663399;
+.navbar {
+    background:white;
+    margin-left:9px;
+    margin-right:90px;
 }
-
+h3{
+    color: black
+}
 .nav-item {
     color: white;
 }
-
+.nav-right{
+    margin-left:10px;
+}
 .box {
     margin: 10px;
     height: 680px;
