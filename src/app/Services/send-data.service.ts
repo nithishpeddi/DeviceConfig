@@ -1,7 +1,7 @@
 import { Injectable, EventEmitter } from '@angular/core';
 import 'rxjs/Rx';
 import { Observable } from 'rxjs/Observable';
-import { Http, Headers, Request, RequestMethod, Response } from '@angular/http';
+import { Http, Headers, Request, RequestMethod, Response, JsonpModule } from '@angular/http';
 import { Router } from '@angular/router';
 
 @Injectable()
@@ -23,16 +23,38 @@ export class SendDataService {
             (response) => this.onSuccess(response, f));
 
     }
+    onReadData() {
+        this.read(null).subscribe((response: Response) => {
+
+            this.redirect(response);
+        });
+    }
+    redirect(response) {
+        let temp;
+        for (let res in response) {
+            if (response[res]) {
+                temp = true;
+
+            }
+            else {
+                temp = false
+            }
+            if (temp) {
+                this._route.navigate(['/']);
+            }
+        }
+
+    }
+
     onSuccess(response, f) {
 
         this.pushDat.emit(f.value);
-        this._route.navigate(['/viewproject']);
-
-
+        this._route.navigate(['/view-project']);
     }
+
     read(projectId: string): Observable<any> {
         return this._http
-            .get(`${this._baseURL}/${projectId}`)
+            .get(this._baseURL)
             .map((res: Response) => res.json())
             .catch(this.handleError);
     }

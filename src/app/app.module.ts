@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { HttpModule } from '@angular/http';
+import { HttpModule, JsonpModule } from '@angular/http';
 import { RouterModule } from "@angular/router";
 import { AppComponent } from './app.component';
 import { AppRoutes } from "./app.routing";
@@ -20,6 +20,7 @@ import { AddConfigModule } from './add-config/addconfig.module'
   imports: [
 
     BrowserModule,
+    JsonpModule,
     FormsModule,
     HttpModule,
     MyDatePickerModule, AccesseriesModule, AddConfigModule,

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { SendDataService } from '../Services/send-data.service';
 
 @Component({
   selector: 'app-home',
@@ -7,9 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DashboardComponent implements OnInit {
 
-  constructor() { }
+  constructor(private SendDataService:SendDataService) { }
 
   ngOnInit() {
+    this.SendDataService.onReadData();
+
   }
 
 }
