@@ -1,17 +1,172 @@
-<h1>Project Name   <i class="fa fa-trash-o fa-2x" aria-hidden="true"></i> <span></span>   <i class="fa fa-pencil-square-o fa-2x" aria-hidden="true"></i></h1>
-<div class="container is-fluid">
- <div class="left">
-  Phase Name <i class="fa fa-trash-o fa-1x" aria-hidden="true"></i><a class="button is-primary is-outlined"><i class="fa fa-plus fa-1x" aria-hidden="true"></i></a>
-  <div class="block">
-  <a class="button is-primary"routerLink="/add-accesseries">+Accessories</a>
-  <a class="button is-warning" routerLink="/add-config">+Configuration</a></div>
-</div>
+<nav class="navbar">
+  <div class="nav-left">
+    <a class="nav-item">
+      <h1>Project Name </h1><i class="fa fa-trash-o fa-2x" aria-hidden="true"></i> <span><i class="fa fa-pencil-square-o fa-2x" aria-hidden="true"></i></span>
+    </a>
+     <a class="nav-item">
+      <h1>Phase Name </h1><i class="fa fa-trash-o fa-2x" aria-hidden="true"></i> <span><i class="fa fa-pencil-square-o fa-2x" aria-hidden="true"></i></span>
+    </a>
+    
+    
+  </div>
+
+</nav>
+<div class="Phase" style="width:100%;height:800%;border:1px solid #000;">
+ 
+<div>
+  <div class="columns">
+        <div class="column is-narrow-desktop">
+            <div class="box" style="width:200px">
+         <p class="label"> <label class="label">Milestone Name</label></p>
+         </div>
+        </div>
+         <div class="columns">
+        <div class="column ">
+            <div class="box" style="width:180px">
+              <p class="label"> <label class="label">Device Name</label>
+              </p>
+              </div>
+        </div>
+        </div>
+   <div class="column is-three-quarters">
+            <div class="box" style="height:480px">
+                <p class="title is-5">Add a configuration</p>
+
+                <div class="field is-horizontal">
+
+                    <div class="field-body">
+                        <div class="field is-grouped">
+                            <p class="control">
+                                <label>Config ID</label>
+                                
+                            </p>
+                        </div><br>
+                        <div class="field">
+                            <p class="control">
+                                <label>Name</label>
+                                
+                            </p>
+                        </div><br>
+                        <div class="field">
+
+                            <p class="control">
+                                <label>Component</label>
+                               
+                            </p>
+                        </div>
+                        <br>
+
+                    </div>
+                </div>
+
+
+
+
+                <div class="field-body">
+                    <div class="field is-grouped">
+                        <p class="control">
+                            <label># Units</label> 
+                        </p>
+                    </div>
+                    <div class="field">
+                        <p class="control">
+                            <label>SubSystem Name</label>
+                            
+                        </p>
+                    </div><br>
+                    <div class="field">
+                        <p class="control">
+                            <label>Assigned</label>
+                            
+
+                        </p>
+                        <br>
+                    </div>
+
+                </div>
+
+
+
+
+                <div class="field-body">
+                    <div class="field is-grouped">
+                        <p class="control">
+                            <label>Enter Priority</label>
+                           
+                        </p>
+                    </div>
+<br>
+                    <div class="field">
+                        <p class="control">
+                            <label>Start Date</label>
+                           
+                        </p>
+                    </div>
+                    <div class="field">
+
+                        <p class="control">
+                            <label>Shipping Date</label>
+                     
+
+                        </p>
+                        <br>
+                    </div>
+                </div>
+
+
+                <div class="field-body">
+                    <div class="field is-grouped">
+                        <p class="control">
+                            <label>Test Team Name</label>
+                        
+                        </p>
+                    </div>
+
+
+                    <div class="field">
+
+                        <p class="control">
+                            <label>Provisioned</label>
+                           
+                        </p>
+                    </div>
+                    <div class="field">
+                        <p class="control">
+                            <label>Smoke Test</label>
+                            
+                        </p>
+                    </div>
+                    <br>
+                </div>
+<br><label>Comments</label>
+
+                <p class="control">
+                    
+                    <textarea name="text" class="textrow" rows="7" cols="150" ngModel></textarea>
+                </p>
+               
+            
+            </div>
+        </div>
+
+
+
+    </div>
+<!--<div class="container is-fluid">
+  <div class="left">
+    Phase Name <i class="fa fa-trash-o fa-1x" aria-hidden="true"></i>
+    <a class="button is-primary is-outlined"><i class="fa fa-plus fa-1x" aria-hidden="true"></i></a>
+    <div class="block">
+      <a class="button is-primary" routerLink="/add-accesseries">+Accessories</a>
+      <a class="button is-warning" routerLink="/add-config">+Configuration</a></div>
+  </div>
 </div>
 
 
 <div class="container is-fluid">
   <div class="notification">
-    Milestone Name <i class="fa fa-trash-o fa-1x" aria-hidden="true"></i><a class="button is-primary is-outlined"><i class="fa fa-plus fa-1x" aria-hidden="true"></i></a>
+    Milestone Name <i class="fa fa-trash-o fa-1x" aria-hidden="true"></i>
+    <a class="button is-primary is-outlined"><i class="fa fa-plus fa-1x" aria-hidden="true"></i></a>
   </div>
-</div>
+</div>-->
 <router-outlet></router-outlet>

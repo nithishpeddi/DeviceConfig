@@ -1,7 +1,7 @@
 <form (ngSubmit)="onSubmit(f)" #f="ngForm">
     <div class="columns">
         <div class="column is-narrow-desktop">
-            <div class="box" style="width: 350px">
+            <div class="box" style="width: 280px">
 
                 <p class="label">
                     <label class="label">Project Name</label>
@@ -64,7 +64,7 @@
                 <div class="field-body">
                     <div class="field is-grouped">
                         <p class="control">
-                            <label># Units</label> <input class="input" name="units" type="number" placeholder="Units" ngModel>
+                            <label># Units</label> <input class="input" name="units"min="1" max="100"type="number" placeholder="Units" ngModel>
                         </p>
                     </div>
                     <div class="field">
@@ -91,7 +91,7 @@
                     <div class="field is-grouped">
                         <p class="control">
                             <label>Enter Priority</label>
-                            <input class="input" name="priority" type="number" placeholder="Priority" ngModel>
+                            <input class="input" name="priority" type="number"min="0" max="10"placeholder="Priority" ngModel>
                         </p>
                     </div>
 
@@ -130,7 +130,7 @@
                         </p>
                     </div>
                     <div class="field">
-                        <p class="control is-expanded has-icons-left">
+                        <p class="control">
                             <label>Smoke Test</label>
                             <input class="input" name="smokeTest" type="text" placeholder="Smoke Test" ngModel>
                         </p>
