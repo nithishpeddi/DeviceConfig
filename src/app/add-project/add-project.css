@@ -8,7 +8,7 @@
 
 .box {
     margin: 15px;
-    height: 680px;
+    height: 650px;
   
 }
 
@@ -18,6 +18,8 @@ h6 {
 
 .control {
     width: 16em;
+    /*overflow: hidden;*/
+    resize: none;
 }
 
 .row {
@@ -26,12 +28,15 @@ h6 {
 
 .textrow {
     margin-top: 3%;
-    text-align: center;
+    text-align: left;
     text-shadow: 40mm;
         overflow: scroll;
+        resize: none;
 }
 
 .button {
     align-content: center;
 }
-
+.block{
+    margin-left:10%;
+}

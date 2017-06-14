@@ -11,5 +11,7 @@ export class AccesseriesComponent implements OnInit {
 
   ngOnInit() {
   }
-
+open(panel) {
+   panel.classList.remove("collapse");
+}
 }

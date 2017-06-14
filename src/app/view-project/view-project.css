@@ -32,3 +32,6 @@ button{
     display: inline-flex;
     padding-top: 12px;
 }
+.nav-left{
+    overflow: hidden;
+}

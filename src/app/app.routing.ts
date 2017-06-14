@@ -1,6 +1,6 @@
 import { DashboardComponent } from "./Dashboard/dashboard";
-import { AddProjectComponent } from './add-project/add-project.component';
-import { ViewProjectComponent } from './view-project/view-project.component';
+import { AddProjectComponent } from './add-project/add-project';
+import { ViewProjectComponent } from './view-project/view-project';
 import { AccesseriesComponent } from './add-accesseries/accesseries';
 import { ConfigComponent } from './add-config/addconfig';
 export const AppRoutes = [

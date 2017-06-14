@@ -6,20 +6,20 @@
                 <p class="label">
                     <label class="label">Project Name</label>
 
-                    <input class="input" name="projectName" type="text" [(ngModel)]="Project.name" placeholder="Project">
+                    <input class="input" name="projectName" type="text" [(ngModel)]="Project.name" placeholder="Add Project">
                 </p><br>
 
                 <p class="label"> <label class="label">Phase Name</label>
 
-                    <input class="input" type="text" name="projectPhase" [(ngModel)]="Project.phase" placeholder="Phase">
+                    <input class="input" type="text" name="projectPhase" [(ngModel)]="Project.phase" placeholder="Add Phase">
                 </p><br>
 
                 <p class="label"> <label class="label">Milestone Name</label>
-                    <input class="input" type="text" name="praojectMileStone" [(ngModel)]="Project.milestone" placeholder="Milestone"></p>
+                    <input class="input" type="text" name="praojectMileStone" [(ngModel)]="Project.milestone" placeholder="Add Milestone"></p>
                 <br>
 
                 <p class="label"> <label class="label">Device Name</label>
-                    <input class="input" type="text" name="deviceName" [(ngModel)]="Project.deviceName" placeholder="Device">
+                    <input class="input" type="text" name="deviceName" [(ngModel)]="Project.deviceName" placeholder="Add Device">
                 </p>
             </div>
         </div>
@@ -34,7 +34,7 @@
                 <div class="field is-horizontal">
 
                     <div class="field-body">
-                        <div class="field is-grouped">
+                        <div class="field">
                             <p class="control">
                                 <label>Config ID</label>
                                 <input class="input" name="configurationID" type="text" placeholder="﴾ID of configuration﴿" ngModel>
@@ -62,9 +62,11 @@
 
 
                 <div class="field-body">
-                    <div class="field is-grouped">
+                    <div class="field ">
                         <p class="control">
-                            <label># Units</label> <input class="input" name="units"min="1" max="100"type="number" placeholder="Units" ngModel>
+                            <label># Units</label>
+                            <input class="input" name="units" min="1" max="100" type="number" placeholder="Units"
+                                ngModel>
                         </p>
                     </div>
                     <div class="field">
@@ -77,13 +79,12 @@
                         <p class="control">
                             <label>Assigned</label>
                             <input class="input" name="assignedTo" type="text" placeholder="Assigned To" ngModel>
-
                         </p>
-                        <br>
+                        
                     </div>
-
+<br>
                 </div>
-
+          <br>
 
 
 
@@ -91,7 +92,7 @@
                     <div class="field is-grouped">
                         <p class="control">
                             <label>Enter Priority</label>
-                            <input class="input" name="priority" type="number"min="0" max="10"placeholder="Priority" ngModel>
+                            <input class="input" name="priority" type="number" min="0" max="10" placeholder="Priority" ngModel>
                         </p>
                     </div>
 
@@ -108,10 +109,10 @@
                             <my-date-picker name="date2" [options]="myDatePickerOptions" value="shippeddatedate" [(ngModel)]="modelship" required></my-date-picker>
 
                         </p>
+                       </div>
                         <br>
-                    </div>
                 </div>
-
+<br>
 
                 <div class="field-body">
                     <div class="field is-grouped">
@@ -132,22 +133,22 @@
                     <div class="field">
                         <p class="control">
                             <label>Smoke Test</label>
-                            <input class="input" name="smokeTest" type="text" placeholder="Smoke Test" ngModel>
+                            <input class="input" name="smokeTest" type="text" placeholder="Yes/No" ngModel>
                         </p>
                     </div>
                     <br>
                 </div>
 
-
+<br>
                 <p class="control">
                     <label>Comments</label>
                     <textarea name="text" class="textrow" rows="7" cols="150" ngModel></textarea>
                 </p>
                 <br>
-                <br>
+              
                 <p class="control">
                     <div class="block">
-                        <a class="button is-primary" routerLink="/view-project">Save</a>
+                        <a class="button is-primary" routerLink="/view-project">Save</a><span></span><span></span>
                         <a class="button is-info" routerLink="/addProject">Cancel</a></div>
             </div>
         </div>

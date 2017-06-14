@@ -3,9 +3,9 @@ import { Project } from './addproject.interface';
 import { SendDataService } from '../Services/send-data.service';
 import { Router } from '@angular/router';
 @Component({
-  selector: 'app-add-project',
-  templateUrl: './add-project.component.html',
-  styleUrls: ['./add-project.component.css']
+ 
+  templateUrl: './add-project.html',
+  styleUrls: ['./add-project.css']
 })
 export class AddProjectComponent implements OnInit {
 

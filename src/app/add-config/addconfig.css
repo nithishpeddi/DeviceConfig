@@ -1,20 +1,15 @@
-.navbar {
-    background:white;
-    margin-left:9px;
-    margin-right:90px;
+.nav {
+    background: #663399;
 }
-h3{
-    color: black
-}
+
 .nav-item {
     color: white;
 }
-.nav-right{
-    margin-left:10px;
-}
+
 .box {
-    margin: 10px;
-    height: 680px;
+    margin: 15px;
+    height: 620px;
+  
 }
 
 h6 {
@@ -23,6 +18,8 @@ h6 {
 
 .control {
     width: 16em;
+    /*overflow: hidden;*/
+    resize: none;
 }
 
 .row {
@@ -31,11 +28,15 @@ h6 {
 
 .textrow {
     margin-top: 3%;
-    text-align: center;
+    text-align: left;
     text-shadow: 40mm;
+        overflow: scroll;
+        resize: none;
 }
 
 .button {
     align-content: center;
 }
-
+.block{
+    margin-left:10%;
+}
