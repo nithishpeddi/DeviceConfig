@@ -5,7 +5,7 @@ import { Router } from '@angular/router';
 @Component({
  
   templateUrl: './add-project.html',
-  styleUrls: ['./add-project.css']
+  styleUrls: ['./add-project.scss']
 })
 export class AddProjectComponent implements OnInit {
 

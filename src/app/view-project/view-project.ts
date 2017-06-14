@@ -4,7 +4,7 @@ import {SendDataService} from '../Services/send-data.service';
 @Component({
   selector: 'app-view-project',
   templateUrl: './view-project.html',
-  styleUrls: ['./view-project.css']
+  styleUrls: ['./view-project.scss']
 })
 export class ViewProjectComponent implements OnInit {
   _mapData = [];

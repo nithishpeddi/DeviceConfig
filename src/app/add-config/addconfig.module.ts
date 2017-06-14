@@ -11,10 +11,9 @@ import { MyDatePickerModule } from 'mydatepicker';
 @NgModule({
     declarations: [ConfigComponent],
     imports: [
-
         BrowserModule,
         FormsModule,
-        HttpModule,MyDatePickerModule,
+        HttpModule, MyDatePickerModule,
 
         RouterModule.forRoot(AppRoutes),
     ],

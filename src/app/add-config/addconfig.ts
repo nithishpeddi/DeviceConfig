@@ -5,7 +5,7 @@ import { Router } from '@angular/router';
 @Component({
   selector: 'app-home',
   templateUrl: './addconfig.html',
-  styleUrls: ['./addconfig.css']
+  styleUrls: ['./addconfig.scss']
 })
 export class ConfigComponent implements OnInit {
   

@@ -1,9 +1,9 @@
-.nav {
-    background: #663399;
+.navbar{
+    height:24px;
 }
-
 .nav-item {
     color: white;
+    margin-right: 30px;
 }
 
 .box {
@@ -18,13 +18,10 @@ h6 {
 
 .control {
     width: 16em;
-    /*overflow: hidden;*/
     resize: none;
 }
 
-.row {
-    margin: 2em;
-}
+
 
 .textrow {
     margin-top: 3%;
@@ -37,6 +34,26 @@ h6 {
 .button {
     align-content: center;
 }
+.block{
+    margin-left:10%;
+    height:70px;
+}
+.box {
+    margin: 15px;
+    height: 650px;
+  
+}
+
+
+.control {
+    width: 16em;
+    resize: none;
+}
+
+.row {
+    margin: 2em;
+}
+
 .block{
     margin-left:10%;
 }

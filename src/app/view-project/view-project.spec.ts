@@ -2,8 +2,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
-
-import { ViewProjectComponent } from './view-project.component';
+import { ViewProjectComponent } from './view-project';
 
 describe('ViewProjectComponent', () => {
   let component: ViewProjectComponent;

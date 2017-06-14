@@ -7,7 +7,7 @@ import { Router } from '@angular/router';
 @Injectable()
 export class SendDataService {
     public pushDat = new EventEmitter<Object>();
-    private _baseURL = 'https://database-99452.firebaseio.com/data.json';
+    private _baseURL = '';
     private _options: { headers: Headers } = { headers: new Headers({ 'Content-Type': 'application/json' }) };
 
     constructor(private _http: Http, private _route: Router) {
@@ -48,7 +48,7 @@ export class SendDataService {
 
     onSuccess(response, f) {
 
-        this.pushDat.emit(f.value);
+        this.pushDat.emit();
         this._route.navigate(['/view-project']);
     }
 
