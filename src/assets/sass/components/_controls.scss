@@ -1,0 +1,105 @@
+/*Controls, menus, inputs, buttons*/
+
+.icon-btn {
+    transition: $text-in-transition;
+    &:hover {transition: $text-out-transition;}
+}
+
+.button.clean-btn {
+    @include div-reset;
+    &.xlarge {font-size: 5.8rem;}
+    transition: $text-in-transition;
+    &:hover,
+    &:focus {transition: $text-in-transition;}
+}
+
+.anchor-icon {
+    &:first-child {margin-right: 10px;}
+    &:last-child {margin-left: 10px;}
+    &.xs-icon {
+        font-size: $xs-icon;
+        line-height: 1;
+    }
+}
+
+/*Dropdown menu*/
+
+.drop-down {
+    @include ul-default;
+    @include flex-row-nowrap;
+    position: relative;
+    li {
+        @include flex-row-nowrap;
+        align-items: center;
+        padding: 0 1.1em;
+        &:hover {
+            a {
+                transition: $text-out-transition;
+                .anchor-icon {
+                    color: $neutral01;
+                    transition: $text-out-transition;
+                    }
+            }
+            
+        }
+        a {
+            color: $neutral01;
+            transition: $text-in-transition;
+            .anchor-icon {transition: $text-in-transition;}
+        }
+        .anchor-icon {color: $accent04;}
+        .drop-down-content {
+            position: absolute;
+            display: none;
+            background-color: $neutral01;
+            z-index: 4;
+            min-width: 3rem;
+            li {
+                a {
+                    display: block;
+                    color: $neutral09;
+                    padding: 6px 8px;
+                } 
+                &:hover {
+                    a {
+                        color: $accent01;
+                    }
+                }
+            }
+        }
+    }
+    li:hover {
+        .drop-down-content {
+            display: block;
+            top: 3.25rem;
+        }
+    }
+}
+
+/*Icon toolbar*/
+
+.icon-toolbar {
+    @include flex-row-nowrap;
+    &:first-child {margin-right: $default-space;}
+    .icon-btn {
+        line-height: $icon-line-height;
+        padding-left: $default-space;
+        color: $neutral05;
+        &:first-child {padding-left: 0;}
+        &:hover {color: $neutral01;}
+    }
+}
+
+/*Onboarding Panel*/
+
+.onboard-first {
+    .xlarge.clean-btn {
+        color: $accent04;
+        &:hover,
+        &:focus {color: $neutral01;}
+    }
+}
+
+.onboarding-notification {}
+
+/*Inputs and Fields*/

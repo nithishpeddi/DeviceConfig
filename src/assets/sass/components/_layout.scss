@@ -1,0 +1,104 @@
+/*Layout basics*/
+
+html {
+    background-color: $background;
+}
+
+.screen-title {
+    @include body-elements;
+    h1 {
+        color: $neutral01;
+        margin: .5rem 0 1rem;
+    }
+}
+
+.phase-view {
+    background: $phase-background;
+}
+
+.milestone-view {
+    background: $milestone-background;
+}
+
+main {
+    @include body-elements;
+}
+
+.phase-view {
+    .phase-view-title {
+        @include flex-row-nowrap;
+        justify-content: flex-start;
+        padding: 10px;
+        align-content: center;
+        p {
+            color: $neutral01;
+            display: block;
+        }
+    }
+}
+
+.onboard-first {
+    @include flex-column;
+    height: 88vh;
+    justify-content: center;
+    .notification {
+        margin: 0 auto;
+        text-align: center;
+        &.clean {
+            @include div-reset;
+            p, h1 {color: $neutral01;}
+        }
+    }
+}
+
+/*Ribbon*/
+
+.nav {
+    .nav-menu {
+        p {
+            color: $neutral01;
+            .icon {
+                color: $neutral01;
+                &:first-child {padding-right: $default-space;}
+            }
+        }
+    }
+}
+
+.ribbon {
+    @include ribbon;
+    box-shadow: $ribbon-shadow;
+    h2, h3, h4 {
+        color: $neutral01;
+        align-self: center;
+    }
+    .nav-right.with-drop-down {
+        overflow:visible;
+    }
+}
+
+/*Task Panels*/
+
+.task-panel {
+    @include flex-row-wrap;
+    justify-content: space-between;
+    .configuration-panel {background-color: $neutral06;}
+}
+
+.task-view {
+    margin-top: 2em;
+    &~.screen-title {
+        margin-top: 0;
+    }
+    .column {
+        &.third {
+            @include one-third-flex;
+        }
+        &.two-thirds {
+            @include two-thirds-flex;
+        }
+        &.full-width {
+            @include full-width-tile;
+        }
+    }
+}

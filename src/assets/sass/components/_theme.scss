@@ -1,0 +1,40 @@
+/*Device Configuration Manager theme*/
+
+/*Neutrals*/
+
+$neutral01:     #FFFFFF;
+$neutral02:     #F0F0F0;
+$neutral03:     #E3E3E3;
+$neutral04:     #BEBEBE;
+$neutral05:     #959595;
+$neutral06:     #8D8D8D;
+$neutral07:     #626262;
+$neutral08:     #2E2E2E;
+$neutral09:     #000000;
+
+/*Colors*/
+
+$accent01:      #D83B01; /*MS Preferred*/
+$accent02:      #E55601;
+$accent03:      #F27100;
+$accent04:      #FF8C00; /*MS Preferred*/
+$accent05:      #FFA90E;
+$accent06:      #FFC61C;
+
+/*Alt Colors*/
+/*
+$accent01:       #002050;
+$accent02:       #0078A3;
+$accent03:       #00959B;
+$accent04:       #00B294;
+$accent05:       #00BCF2;
+$accent06:       #80D7D9;
+*/
+
+/*Semantic Naming*/
+
+$background:            $neutral08;
+$ribbon-background:     $accent01;
+$project-background:    $neutral07;
+$phase-background:      $neutral07;
+$milestone-background:  $neutral05;

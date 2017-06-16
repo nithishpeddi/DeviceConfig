@@ -1,0 +1,89 @@
+/*Mixins*/
+
+@mixin ribbon {
+    background-color: $ribbon-background;
+    padding: 0 2rem;
+}
+
+@mixin body-elements {
+    width: 90vw;
+    margin: 0 auto;
+}
+
+/*Flexbox*/
+
+@mixin display-flex {
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+@mixin flex-row {
+    @include display-flex;
+    flex-direction: row;
+}
+
+@mixin flex-row-wrap {
+    @include display-flex;
+    flex-flow: row wrap;
+}
+
+@mixin flex-row-nowrap {
+    @include display-flex;
+    flex-flow: row nowrap;
+}
+
+@mixin flex-column {
+    @include display-flex;
+    flex-flow: column nowrap;
+}
+
+@mixin flex-column-wrap {
+    @include display-flex;
+    flex-flow: column wrap;
+}
+
+@mixin keep-columns {
+	display: inline-block;
+	width: 100%;
+}
+
+/*Columns and grids*/
+
+@mixin full-width-tile {
+	flex: 1 0 100%;
+}
+
+@mixin one-quarter-flex {
+    flex: 0 1 calc(25% - .2em);
+}
+
+@mixin one-third-flex {
+    flex: 0 1 calc(33% - .2em);
+}
+
+@mixin two-thirds-flex {
+    flex: 0 1 calc(66% - .2em);
+}
+
+@mixin half-flex {
+    flex: 0 1 calc(50% - .2em);
+}
+
+/*List mixins*/
+
+@mixin ul-default {
+    margin: 0;
+}
+
+@mixin div-reset {
+    background-color: transparent;
+    border: 0;
+    border-radius: 0;
+    border-color: transparent;
+}
+
+/*Add panel*/
+/*For adding a resource in any panel*/
+

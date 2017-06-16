@@ -1,7 +1,7 @@
 import { Injectable, EventEmitter } from '@angular/core';
 import 'rxjs/Rx';
 import { Observable } from 'rxjs/Observable';
-import { Http, Headers, Request, RequestMethod, Response, JsonpModule } from '@angular/http';
+import { Http, Headers, Request, RequestMethod, Response,JsonpModule } from '@angular/http';
 import { Router } from '@angular/router';
 
 @Injectable()
@@ -23,35 +23,40 @@ export class SendDataService {
             (response) => this.onSuccess(response, f));
 
     }
-    onReadData() {
-        this.read(null).subscribe((response: Response) => {
-
-            this.redirect(response);
+    onReadData()
+    {
+        this.read(null).subscribe((response:Response) => 
+        {
+          
+          this.redirect(response);
         });
     }
-    redirect(response) {
-        let temp;
-        for (let res in response) {
-            if (response[res]) {
-                temp = true;
-
-            }
-            else {
-                temp = false
-            }
-            if (temp) {
-                this._route.navigate(['/']);
-            }
+    redirect(response)
+    {let temp;
+        for(let res in response)
+        {
+            if(response[res])
+        {
+            temp=true;
+            
         }
-
+        else{
+            temp=false
+        }
+        if(temp)
+        {
+            this._route.navigate(['/']);
+        }
+        }
+        
     }
-
+  
     onSuccess(response, f) {
 
-        this.pushDat.emit();
+        this.pushDat.emit(f.value);
         this._route.navigate(['/view-project']);
     }
-
+   
     read(projectId: string): Observable<any> {
         return this._http
             .get(this._baseURL)
@@ -78,8 +83,8 @@ export class SendDataService {
             .catch(this.handleError);
     }
     private handleError(error: Response) {
-        console.log('handleError');
-        return Observable.throw(error.json().message || 'Server error');
+        // console.log('handleError');
+        return Observable.throw(error || 'Server error');
     }
 
 }
