@@ -1,7 +1,9 @@
-@import 'components/_bulma.scss';
-@import 'components/_controls.scss';
-@import 'components/_layout.scss';
-@import 'components/_mixins.scss';
-@import 'components/_standards.scss';
-@import 'components/_theme.scss';
-@import 'components/_typography.scss';
+/*Compile all SASS partials into one*/
+
+@import "components/_standards";
+@import "components/_theme";
+@import "components/_typography";
+@import "components/_mixins";
+@import "components/_controls";
+@import "components/_bulma";
+@import "components/_layout";
